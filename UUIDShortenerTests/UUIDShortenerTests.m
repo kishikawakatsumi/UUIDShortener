@@ -7,6 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
+#import <AdSupport/AdSupport.h>
 #import "UUIDShortener.h"
 
 @interface UUIDShortenerTests : XCTestCase
@@ -24,6 +25,8 @@
 {
     [super tearDown];
 }
+
+#pragma mark - Regular case
 
 - (void)testShortenUUID
 {
@@ -68,6 +71,30 @@
     NSString *restoredString = [NSUUID UUIDStringFromShortUUIDString:shortUUIDString];
     XCTAssertEqualObjects(restoredString, UUIDString);
 }
+
+- (void)testVedorIdentifier
+{
+    NSUUID *identifierForVendor = [[UIDevice currentDevice] identifierForVendor];
+    
+    NSString *shortUUIDString = identifierForVendor.shortUUIDString;
+    XCTAssertEqual(shortUUIDString.length, 26U);
+    
+    NSString *restoredString = [UUIDShortener UUIDStringFromShortUUIDString:shortUUIDString];
+    XCTAssertEqualObjects(restoredString, identifierForVendor.UUIDString);
+}
+
+- (void)testAdvertisingIdentifier
+{
+    NSUUID *advertisingIdentifier = [[ASIdentifierManager sharedManager] advertisingIdentifier];
+    
+    NSString *shortUUIDString = advertisingIdentifier.shortUUIDString;
+    XCTAssertEqual(shortUUIDString.length, 26U);
+    
+    NSString *restoredString = [UUIDShortener UUIDStringFromShortUUIDString:shortUUIDString];
+    XCTAssertEqualObjects(restoredString, advertisingIdentifier.UUIDString);
+}
+
+#pragma mark - Irregular case
 
 - (void)testInvalidUUIDString
 {

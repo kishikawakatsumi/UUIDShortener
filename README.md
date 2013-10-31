@@ -1,7 +1,5 @@
 UUIDShortener
 =============
-[![Build Status](https://travis-ci.org/kishikawakatsumi/UUIDShortener.png?branch=master)](https://travis-ci.org/kishikawakatsumi/UUIDShortener)
-[![Coverage Status](https://coveralls.io/repos/kishikawakatsumi/UUIDShortener/badge.png?branch=master)](https://coveralls.io/r/kishikawakatsumi/UUIDShortener?branch=master)
 
 Convert UUID 32-character hex string into a Base32 short string and back.
 

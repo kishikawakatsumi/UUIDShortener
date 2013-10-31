@@ -13,14 +13,13 @@
 		14AF31A4182233FA00AEDCEC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 14AF31A2182233FA00AEDCEC /* InfoPlist.strings */; };
 		14AF31A6182233FA00AEDCEC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 14AF31A5182233FA00AEDCEC /* main.m */; };
 		14AF31AA182233FA00AEDCEC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 14AF31A9182233FA00AEDCEC /* AppDelegate.m */; };
-		14AF31AC182233FA00AEDCEC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14AF31AB182233FA00AEDCEC /* Images.xcassets */; };
 		14AF31B3182233FA00AEDCEC /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14AF31B2182233FA00AEDCEC /* XCTest.framework */; };
 		14AF31B4182233FA00AEDCEC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14AF3199182233FA00AEDCEC /* Foundation.framework */; };
 		14AF31B5182233FA00AEDCEC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14AF319D182233FA00AEDCEC /* UIKit.framework */; };
 		14AF31BD182233FA00AEDCEC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 14AF31BB182233FA00AEDCEC /* InfoPlist.strings */; };
 		14AF31BF182233FA00AEDCEC /* UUIDShortenerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 14AF31BE182233FA00AEDCEC /* UUIDShortenerTests.m */; };
-		14AF31CA1822340D00AEDCEC /* UUIDShortener.m in Sources */ = {isa = PBXBuildFile; fileRef = 14AF31C91822340D00AEDCEC /* UUIDShortener.m */; };
-		14AF31CB1822340D00AEDCEC /* UUIDShortener.m in Sources */ = {isa = PBXBuildFile; fileRef = 14AF31C91822340D00AEDCEC /* UUIDShortener.m */; };
+		14AF31CE1822442400AEDCEC /* UUIDShortener.m in Sources */ = {isa = PBXBuildFile; fileRef = 14AF31CD1822442400AEDCEC /* UUIDShortener.m */; };
+		14AF31CF1822442400AEDCEC /* UUIDShortener.m in Sources */ = {isa = PBXBuildFile; fileRef = 14AF31CD1822442400AEDCEC /* UUIDShortener.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,14 +43,13 @@
 		14AF31A7182233FA00AEDCEC /* UUIDShortener-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UUIDShortener-Prefix.pch"; sourceTree = "<group>"; };
 		14AF31A8182233FA00AEDCEC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		14AF31A9182233FA00AEDCEC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		14AF31AB182233FA00AEDCEC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		14AF31B1182233FA00AEDCEC /* UUIDShortenerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UUIDShortenerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		14AF31B2182233FA00AEDCEC /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		14AF31BA182233FA00AEDCEC /* UUIDShortenerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UUIDShortenerTests-Info.plist"; sourceTree = "<group>"; };
 		14AF31BC182233FA00AEDCEC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		14AF31BE182233FA00AEDCEC /* UUIDShortenerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UUIDShortenerTests.m; sourceTree = "<group>"; };
-		14AF31C81822340D00AEDCEC /* UUIDShortener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UUIDShortener.h; sourceTree = "<group>"; };
-		14AF31C91822340D00AEDCEC /* UUIDShortener.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UUIDShortener.m; sourceTree = "<group>"; };
+		14AF31CC1822442400AEDCEC /* UUIDShortener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UUIDShortener.h; path = Lib/UUIDShortener.h; sourceTree = SOURCE_ROOT; };
+		14AF31CD1822442400AEDCEC /* UUIDShortener.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UUIDShortener.m; path = Lib/UUIDShortener.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,9 +111,7 @@
 			children = (
 				14AF31A8182233FA00AEDCEC /* AppDelegate.h */,
 				14AF31A9182233FA00AEDCEC /* AppDelegate.m */,
-				14AF31C81822340D00AEDCEC /* UUIDShortener.h */,
-				14AF31C91822340D00AEDCEC /* UUIDShortener.m */,
-				14AF31AB182233FA00AEDCEC /* Images.xcassets */,
+				14AF31D01822442800AEDCEC /* Lib */,
 				14AF31A0182233FA00AEDCEC /* Supporting Files */,
 			);
 			path = UUIDShortener;
@@ -148,6 +144,15 @@
 				14AF31BB182233FA00AEDCEC /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		14AF31D01822442800AEDCEC /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				14AF31CC1822442400AEDCEC /* UUIDShortener.h */,
+				14AF31CD1822442400AEDCEC /* UUIDShortener.m */,
+			);
+			name = Lib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -226,7 +231,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				14AF31A4182233FA00AEDCEC /* InfoPlist.strings in Resources */,
-				14AF31AC182233FA00AEDCEC /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,7 +249,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14AF31CA1822340D00AEDCEC /* UUIDShortener.m in Sources */,
+				14AF31CE1822442400AEDCEC /* UUIDShortener.m in Sources */,
 				14AF31AA182233FA00AEDCEC /* AppDelegate.m in Sources */,
 				14AF31A6182233FA00AEDCEC /* main.m in Sources */,
 			);
@@ -256,7 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				14AF31BF182233FA00AEDCEC /* UUIDShortenerTests.m in Sources */,
-				14AF31CB1822340D00AEDCEC /* UUIDShortener.m in Sources */,
+				14AF31CF1822442400AEDCEC /* UUIDShortener.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -449,6 +453,7 @@
 				14AF31C4182233FA00AEDCEC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		14AF31C5182233FA00AEDCEC /* Build configuration list for PBXNativeTarget "UUIDShortenerTests" */ = {
 			isa = XCConfigurationList;
@@ -457,6 +462,7 @@
 				14AF31C7182233FA00AEDCEC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -34,7 +34,7 @@
     NSString *UUIDString = UUID.UUIDString;
     
     NSString *shortUUIDString = [UUIDShortener shortenUUIDString:UUIDString];
-    XCTAssertEqual(shortUUIDString.length, 26U);
+    XCTAssertEqual(shortUUIDString.length, (NSUInteger)26);
     
     NSString *restoredString = [UUIDShortener UUIDStringFromShortUUIDString:shortUUIDString];
     XCTAssertEqualObjects(restoredString, UUIDString);
@@ -66,7 +66,7 @@
     NSString *UUIDString = UUID.UUIDString;
     
     NSString *shortUUIDString = UUID.shortUUIDString;
-    XCTAssertEqual(shortUUIDString.length, 26U);
+    XCTAssertEqual(shortUUIDString.length, (NSUInteger)26);
     
     NSString *restoredString = [NSUUID UUIDStringFromShortUUIDString:shortUUIDString];
     XCTAssertEqualObjects(restoredString, UUIDString);
@@ -77,7 +77,7 @@
     NSUUID *identifierForVendor = [[UIDevice currentDevice] identifierForVendor];
     
     NSString *shortUUIDString = identifierForVendor.shortUUIDString;
-    XCTAssertEqual(shortUUIDString.length, 26U);
+    XCTAssertEqual(shortUUIDString.length, (NSUInteger)26);
     
     NSString *restoredString = [UUIDShortener UUIDStringFromShortUUIDString:shortUUIDString];
     XCTAssertEqualObjects(restoredString, identifierForVendor.UUIDString);
@@ -88,7 +88,7 @@
     NSUUID *advertisingIdentifier = [[ASIdentifierManager sharedManager] advertisingIdentifier];
     
     NSString *shortUUIDString = advertisingIdentifier.shortUUIDString;
-    XCTAssertEqual(shortUUIDString.length, 26U);
+    XCTAssertEqual(shortUUIDString.length, (NSUInteger)26);
     
     NSString *restoredString = [UUIDShortener UUIDStringFromShortUUIDString:shortUUIDString];
     XCTAssertEqualObjects(restoredString, advertisingIdentifier.UUIDString);

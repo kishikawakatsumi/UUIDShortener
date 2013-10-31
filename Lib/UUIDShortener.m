@@ -33,7 +33,7 @@
 
 - (NSString *)shortUUIDString
 {
-    return [UUIDShortener shortUUIDString:self.UUIDString];
+    return [UUIDShortener shortenUUIDString:self.UUIDString];
 }
 
 - (id)initWithShortUUIDString:(NSString *)string
@@ -51,7 +51,7 @@
 
 @implementation UUIDShortener
 
-+ (NSString *)shortUUIDString:(NSString *)string
++ (NSString *)shortenUUIDString:(NSString *)string
 {
     if (!string.isUUID) {
         return nil;

@@ -10,7 +10,7 @@
 
 @interface UUIDShortener : NSObject
 
-+ (NSString *)shortUUIDString:(NSString *)UUIDString;
++ (NSString *)shortenUUIDString:(NSString *)UUIDString;
 + (NSString *)UUIDStringFromShortUUIDString:(NSString *)shortUUIDString;
 
 @end

@@ -30,7 +30,7 @@
     NSUUID *UUID = [NSUUID UUID];
     NSString *UUIDString = UUID.UUIDString;
     
-    NSString *shortUUIDString = [UUIDShortener shortUUIDString:UUIDString];
+    NSString *shortUUIDString = [UUIDShortener shortenUUIDString:UUIDString];
     XCTAssertEqual(shortUUIDString.length, (NSUInteger)26);
     
     NSString *restoredString = [UUIDShortener UUIDStringFromShortUUIDString:shortUUIDString];

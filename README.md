@@ -1,5 +1,6 @@
 UUIDShortener
 =============
+https://travis-ci.org/kishikawakatsumi/UUIDShortener.png?branch=master
 
 Convert UUID 32-character hex string into a Base32 short string and back.
 
@@ -21,7 +22,7 @@ NSLog(@"Restored UUID:\t%@", restoredString);
 
 ```
 Original UUID:	40256F2F-3211-49CD-BC1F-DD5197D2F0F9
-Short UUID:	IASW6LZSCFE43PA73VIZPUXQ7E
+Short UUID:	    IASW6LZSCFE43PA73VIZPUXQ7E
 
 =====
 Restored UUID:	40256F2F-3211-49CD-BC1F-DD5197D2F0F9

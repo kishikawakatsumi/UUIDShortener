@@ -1,0 +1,464 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		14AF319A182233FA00AEDCEC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14AF3199182233FA00AEDCEC /* Foundation.framework */; };
+		14AF319C182233FA00AEDCEC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14AF319B182233FA00AEDCEC /* CoreGraphics.framework */; };
+		14AF319E182233FA00AEDCEC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14AF319D182233FA00AEDCEC /* UIKit.framework */; };
+		14AF31A4182233FA00AEDCEC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 14AF31A2182233FA00AEDCEC /* InfoPlist.strings */; };
+		14AF31A6182233FA00AEDCEC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 14AF31A5182233FA00AEDCEC /* main.m */; };
+		14AF31AA182233FA00AEDCEC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 14AF31A9182233FA00AEDCEC /* AppDelegate.m */; };
+		14AF31AC182233FA00AEDCEC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14AF31AB182233FA00AEDCEC /* Images.xcassets */; };
+		14AF31B3182233FA00AEDCEC /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14AF31B2182233FA00AEDCEC /* XCTest.framework */; };
+		14AF31B4182233FA00AEDCEC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14AF3199182233FA00AEDCEC /* Foundation.framework */; };
+		14AF31B5182233FA00AEDCEC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14AF319D182233FA00AEDCEC /* UIKit.framework */; };
+		14AF31BD182233FA00AEDCEC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 14AF31BB182233FA00AEDCEC /* InfoPlist.strings */; };
+		14AF31BF182233FA00AEDCEC /* UUIDShortenerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 14AF31BE182233FA00AEDCEC /* UUIDShortenerTests.m */; };
+		14AF31CA1822340D00AEDCEC /* UUIDShortener.m in Sources */ = {isa = PBXBuildFile; fileRef = 14AF31C91822340D00AEDCEC /* UUIDShortener.m */; };
+		14AF31CB1822340D00AEDCEC /* UUIDShortener.m in Sources */ = {isa = PBXBuildFile; fileRef = 14AF31C91822340D00AEDCEC /* UUIDShortener.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		14AF31B6182233FA00AEDCEC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 14AF318E182233FA00AEDCEC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 14AF3195182233FA00AEDCEC;
+			remoteInfo = UUIDShortener;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		14AF3196182233FA00AEDCEC /* UUIDShortener.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UUIDShortener.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		14AF3199182233FA00AEDCEC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		14AF319B182233FA00AEDCEC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		14AF319D182233FA00AEDCEC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		14AF31A1182233FA00AEDCEC /* UUIDShortener-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UUIDShortener-Info.plist"; sourceTree = "<group>"; };
+		14AF31A3182233FA00AEDCEC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		14AF31A5182233FA00AEDCEC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		14AF31A7182233FA00AEDCEC /* UUIDShortener-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UUIDShortener-Prefix.pch"; sourceTree = "<group>"; };
+		14AF31A8182233FA00AEDCEC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		14AF31A9182233FA00AEDCEC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		14AF31AB182233FA00AEDCEC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		14AF31B1182233FA00AEDCEC /* UUIDShortenerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UUIDShortenerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		14AF31B2182233FA00AEDCEC /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		14AF31BA182233FA00AEDCEC /* UUIDShortenerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UUIDShortenerTests-Info.plist"; sourceTree = "<group>"; };
+		14AF31BC182233FA00AEDCEC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		14AF31BE182233FA00AEDCEC /* UUIDShortenerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UUIDShortenerTests.m; sourceTree = "<group>"; };
+		14AF31C81822340D00AEDCEC /* UUIDShortener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UUIDShortener.h; sourceTree = "<group>"; };
+		14AF31C91822340D00AEDCEC /* UUIDShortener.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UUIDShortener.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		14AF3193182233FA00AEDCEC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14AF319C182233FA00AEDCEC /* CoreGraphics.framework in Frameworks */,
+				14AF319E182233FA00AEDCEC /* UIKit.framework in Frameworks */,
+				14AF319A182233FA00AEDCEC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14AF31AE182233FA00AEDCEC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14AF31B3182233FA00AEDCEC /* XCTest.framework in Frameworks */,
+				14AF31B5182233FA00AEDCEC /* UIKit.framework in Frameworks */,
+				14AF31B4182233FA00AEDCEC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		14AF318D182233FA00AEDCEC = {
+			isa = PBXGroup;
+			children = (
+				14AF319F182233FA00AEDCEC /* UUIDShortener */,
+				14AF31B8182233FA00AEDCEC /* UUIDShortenerTests */,
+				14AF3198182233FA00AEDCEC /* Frameworks */,
+				14AF3197182233FA00AEDCEC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		14AF3197182233FA00AEDCEC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				14AF3196182233FA00AEDCEC /* UUIDShortener.app */,
+				14AF31B1182233FA00AEDCEC /* UUIDShortenerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		14AF3198182233FA00AEDCEC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				14AF3199182233FA00AEDCEC /* Foundation.framework */,
+				14AF319B182233FA00AEDCEC /* CoreGraphics.framework */,
+				14AF319D182233FA00AEDCEC /* UIKit.framework */,
+				14AF31B2182233FA00AEDCEC /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		14AF319F182233FA00AEDCEC /* UUIDShortener */ = {
+			isa = PBXGroup;
+			children = (
+				14AF31A8182233FA00AEDCEC /* AppDelegate.h */,
+				14AF31A9182233FA00AEDCEC /* AppDelegate.m */,
+				14AF31C81822340D00AEDCEC /* UUIDShortener.h */,
+				14AF31C91822340D00AEDCEC /* UUIDShortener.m */,
+				14AF31AB182233FA00AEDCEC /* Images.xcassets */,
+				14AF31A0182233FA00AEDCEC /* Supporting Files */,
+			);
+			path = UUIDShortener;
+			sourceTree = "<group>";
+		};
+		14AF31A0182233FA00AEDCEC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				14AF31A1182233FA00AEDCEC /* UUIDShortener-Info.plist */,
+				14AF31A2182233FA00AEDCEC /* InfoPlist.strings */,
+				14AF31A5182233FA00AEDCEC /* main.m */,
+				14AF31A7182233FA00AEDCEC /* UUIDShortener-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		14AF31B8182233FA00AEDCEC /* UUIDShortenerTests */ = {
+			isa = PBXGroup;
+			children = (
+				14AF31BE182233FA00AEDCEC /* UUIDShortenerTests.m */,
+				14AF31B9182233FA00AEDCEC /* Supporting Files */,
+			);
+			path = UUIDShortenerTests;
+			sourceTree = "<group>";
+		};
+		14AF31B9182233FA00AEDCEC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				14AF31BA182233FA00AEDCEC /* UUIDShortenerTests-Info.plist */,
+				14AF31BB182233FA00AEDCEC /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		14AF3195182233FA00AEDCEC /* UUIDShortener */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14AF31C2182233FA00AEDCEC /* Build configuration list for PBXNativeTarget "UUIDShortener" */;
+			buildPhases = (
+				14AF3192182233FA00AEDCEC /* Sources */,
+				14AF3193182233FA00AEDCEC /* Frameworks */,
+				14AF3194182233FA00AEDCEC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UUIDShortener;
+			productName = UUIDShortener;
+			productReference = 14AF3196182233FA00AEDCEC /* UUIDShortener.app */;
+			productType = "com.apple.product-type.application";
+		};
+		14AF31B0182233FA00AEDCEC /* UUIDShortenerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14AF31C5182233FA00AEDCEC /* Build configuration list for PBXNativeTarget "UUIDShortenerTests" */;
+			buildPhases = (
+				14AF31AD182233FA00AEDCEC /* Sources */,
+				14AF31AE182233FA00AEDCEC /* Frameworks */,
+				14AF31AF182233FA00AEDCEC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				14AF31B7182233FA00AEDCEC /* PBXTargetDependency */,
+			);
+			name = UUIDShortenerTests;
+			productName = UUIDShortenerTests;
+			productReference = 14AF31B1182233FA00AEDCEC /* UUIDShortenerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		14AF318E182233FA00AEDCEC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "kishikawa katsumi";
+				TargetAttributes = {
+					14AF31B0182233FA00AEDCEC = {
+						TestTargetID = 14AF3195182233FA00AEDCEC;
+					};
+				};
+			};
+			buildConfigurationList = 14AF3191182233FA00AEDCEC /* Build configuration list for PBXProject "UUIDShortener" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 14AF318D182233FA00AEDCEC;
+			productRefGroup = 14AF3197182233FA00AEDCEC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				14AF3195182233FA00AEDCEC /* UUIDShortener */,
+				14AF31B0182233FA00AEDCEC /* UUIDShortenerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		14AF3194182233FA00AEDCEC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14AF31A4182233FA00AEDCEC /* InfoPlist.strings in Resources */,
+				14AF31AC182233FA00AEDCEC /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14AF31AF182233FA00AEDCEC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14AF31BD182233FA00AEDCEC /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		14AF3192182233FA00AEDCEC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14AF31CA1822340D00AEDCEC /* UUIDShortener.m in Sources */,
+				14AF31AA182233FA00AEDCEC /* AppDelegate.m in Sources */,
+				14AF31A6182233FA00AEDCEC /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14AF31AD182233FA00AEDCEC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14AF31BF182233FA00AEDCEC /* UUIDShortenerTests.m in Sources */,
+				14AF31CB1822340D00AEDCEC /* UUIDShortener.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		14AF31B7182233FA00AEDCEC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 14AF3195182233FA00AEDCEC /* UUIDShortener */;
+			targetProxy = 14AF31B6182233FA00AEDCEC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		14AF31A2182233FA00AEDCEC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				14AF31A3182233FA00AEDCEC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		14AF31BB182233FA00AEDCEC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				14AF31BC182233FA00AEDCEC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		14AF31C0182233FA00AEDCEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		14AF31C1182233FA00AEDCEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		14AF31C3182233FA00AEDCEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UUIDShortener/UUIDShortener-Prefix.pch";
+				INFOPLIST_FILE = "UUIDShortener/UUIDShortener-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		14AF31C4182233FA00AEDCEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UUIDShortener/UUIDShortener-Prefix.pch";
+				INFOPLIST_FILE = "UUIDShortener/UUIDShortener-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		14AF31C6182233FA00AEDCEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/UUIDShortener.app/UUIDShortener";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UUIDShortener/UUIDShortener-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "UUIDShortenerTests/UUIDShortenerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		14AF31C7182233FA00AEDCEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/UUIDShortener.app/UUIDShortener";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UUIDShortener/UUIDShortener-Prefix.pch";
+				INFOPLIST_FILE = "UUIDShortenerTests/UUIDShortenerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		14AF3191182233FA00AEDCEC /* Build configuration list for PBXProject "UUIDShortener" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14AF31C0182233FA00AEDCEC /* Debug */,
+				14AF31C1182233FA00AEDCEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		14AF31C2182233FA00AEDCEC /* Build configuration list for PBXNativeTarget "UUIDShortener" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14AF31C3182233FA00AEDCEC /* Debug */,
+				14AF31C4182233FA00AEDCEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		14AF31C5182233FA00AEDCEC /* Build configuration list for PBXNativeTarget "UUIDShortenerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14AF31C6182233FA00AEDCEC /* Debug */,
+				14AF31C7182233FA00AEDCEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 14AF318E182233FA00AEDCEC /* Project object */;
+}

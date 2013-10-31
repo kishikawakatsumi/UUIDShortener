@@ -13,14 +13,18 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    /* Generate UUID */
     NSUUID *UUID = [NSUUID UUID];
     NSString *UUIDString = UUID.UUIDString;
     NSLog(@"Original UUID:\t%@", UUIDString);
     
+    /* Shorten UUID string */
     NSString *shortUUIDString = UUID.shortUUIDString;
     NSLog(@"Short UUID:\t%@", shortUUIDString);
     
     NSLog(@"%@", @"=====");
+    
+    /* Restore UUID string from short string */
     NSString *restoredString = [NSUUID UUIDStringFromShortUUIDString:shortUUIDString];
     NSLog(@"Restored UUID:\t%@", restoredString);
     

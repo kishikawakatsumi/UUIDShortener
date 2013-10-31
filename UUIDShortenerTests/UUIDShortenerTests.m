@@ -75,4 +75,10 @@
     XCTAssertNil(shortUUIDString);
 }
 
+- (void)testInvalidShortUUIDString
+{
+    NSString *restoredString = [UUIDShortener UUIDStringFromShortUUIDString:@"2INM6V5IXNEI3NO532WJJSNG2+"];
+    XCTAssertNil(restoredString);
+}
+
 @end

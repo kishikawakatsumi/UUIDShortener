@@ -34,7 +34,7 @@
     NSString *UUIDString = UUID.UUIDString;
     
     NSString *shortUUIDString = [UUIDShortener shortenUUIDString:UUIDString];
-    XCTAssertEqual(shortUUIDString.length, (NSUInteger)26);
+    XCTAssertEqual(shortUUIDString.length, 26U);
     
     NSString *restoredString = [UUIDShortener UUIDStringFromShortUUIDString:shortUUIDString];
     XCTAssertEqualObjects(restoredString, UUIDString);
@@ -66,7 +66,7 @@
     NSString *UUIDString = UUID.UUIDString;
     
     NSString *shortUUIDString = UUID.shortUUIDString;
-    XCTAssertEqual(shortUUIDString.length, (NSUInteger)26);
+    XCTAssertEqual(shortUUIDString.length, 26U);
     
     NSString *restoredString = [NSUUID UUIDStringFromShortUUIDString:shortUUIDString];
     XCTAssertEqualObjects(restoredString, UUIDString);

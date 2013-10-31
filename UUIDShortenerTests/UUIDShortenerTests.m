@@ -37,6 +37,26 @@
     XCTAssertEqualObjects(restoredString, UUIDString);
 }
 
+- (void)testShortenUUIDString
+{
+    NSString *UUIDString = @"D21ACF57-A8BB-488D-B5DD-DEAC94C9A6D1";
+    NSString *shortUUIDString = [UUIDShortener shortenUUIDString:UUIDString];
+    XCTAssertEqualObjects(shortUUIDString, @"2INM6V5IXNEI3NO532WJJSNG2E");
+    
+    NSString *restoredString = [UUIDShortener UUIDStringFromShortUUIDString:shortUUIDString];
+    XCTAssertEqualObjects(restoredString, UUIDString);
+}
+
+- (void)testShortenUUIDStringWithoutDashes
+{
+    NSString *UUIDString = @"D21ACF57A8BB488DB5DDDEAC94C9A6D1";
+    NSString *shortUUIDString = [UUIDShortener shortenUUIDString:UUIDString];
+    XCTAssertEqualObjects(shortUUIDString, @"2INM6V5IXNEI3NO532WJJSNG2E");
+    
+    NSString *restoredString = [UUIDShortener UUIDStringFromShortUUIDString:shortUUIDString];
+    XCTAssertEqualObjects(restoredString, @"D21ACF57-A8BB-488D-B5DD-DEAC94C9A6D1");
+}
+
 - (void)testNSUUIDCategoryMethods
 {
     NSUUID *UUID = [NSUUID UUID];
@@ -47,6 +67,12 @@
     
     NSString *restoredString = [NSUUID UUIDStringFromShortUUIDString:shortUUIDString];
     XCTAssertEqualObjects(restoredString, UUIDString);
+}
+
+- (void)testInvalidUUIDString
+{
+    NSString *shortUUIDString = [UUIDShortener shortenUUIDString:@"1234567890"];
+    XCTAssertNil(shortUUIDString);
 }
 
 @end

@@ -20,7 +20,7 @@
 {
     NSRegularExpression *regex;
     NSError *error = nil;
-    regex = [NSRegularExpression regularExpressionWithPattern:@"^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"
+    regex = [NSRegularExpression regularExpressionWithPattern:@"^[0-9a-f]{8}-?[0-9a-f]{4}-?[0-9a-f]{4}-?[0-9a-f]{4}-?[0-9a-f]{12}$"
                                                       options:NSRegularExpressionCaseInsensitive
                                                         error:&error];
     NSUInteger numberOfMatches = [regex numberOfMatchesInString:self options:kNilOptions range:NSMakeRange(0, self.length)];
@@ -65,6 +65,10 @@
 
 + (NSString *)UUIDStringFromShortUUIDString:(NSString *)shortUUIDString
 {
+    if (shortUUIDString.length != 26) {
+        return nil;
+    }
+    
     NSData *data = [UUIDShortener dataWithBase32Encoding:shortUUIDString];
     NSString *hexString = [UUIDShortener hexStringWithData:data];
     

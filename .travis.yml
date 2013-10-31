@@ -5,4 +5,4 @@ script:
 #  - make test
    - make build
 after_success:
-  - ./coveralls.sh -e UUIDShortenerTests --verbose
+  - ./coveralls.sh - UUIDShortener -e UUIDShortenerTests --verbose

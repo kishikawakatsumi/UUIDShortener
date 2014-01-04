@@ -1,6 +1,10 @@
 UUID Shortener
 =============
 
+[![Version](https://cocoapod-badges.herokuapp.com/v/UUIDShortener/badge.png)](https://cocoapod-badges.herokuapp.com/v/JavaScriptBridge/badge.png)
+[![Platform](https://cocoapod-badges.herokuapp.com/p/UUIDShortener/badge.png)](https://cocoapod-badges.herokuapp.com/p/JavaScriptBridge/badge.png)
+[![Build Status](https://travis-ci.org/kishikawakatsumi/UUIDShortener.png?branch=master)](https://travis-ci.org/kishikawakatsumi/UUIDShortener)
+
 Convert UUID 32-character hex string into a Base32 short string and back.
 
 

@@ -4,6 +4,7 @@ UUID Shortener
 [![Version](https://cocoapod-badges.herokuapp.com/v/UUIDShortener/badge.png)](https://cocoapod-badges.herokuapp.com/v/UUIDShortener/badge.png)
 [![Platform](https://cocoapod-badges.herokuapp.com/p/UUIDShortener/badge.png)](https://cocoapod-badges.herokuapp.com/p/UUIDShortener/badge.png)
 [![Build Status](https://travis-ci.org/kishikawakatsumi/UUIDShortener.png?branch=master)](https://travis-ci.org/kishikawakatsumi/UUIDShortener)
+[![Analytics](https://ga-beacon.appspot.com/UA-4291014-9/UUIDShortener/README.md)](https://github.com/igrigorik/ga-beacon)
 
 Convert UUID 32-character hex string into a Base32 short string and back.
 

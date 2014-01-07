@@ -1,4 +1,4 @@
-UUID Shortener
+UUID Shortener ![License MIT](https://go-shields.herokuapp.com/license-MIT-yellow.png) 
 =============
 
 [![Version](https://cocoapod-badges.herokuapp.com/v/UUIDShortener/badge.png)](https://cocoapod-badges.herokuapp.com/v/UUIDShortener/badge.png)

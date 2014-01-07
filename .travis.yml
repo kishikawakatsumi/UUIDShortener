@@ -1,8 +1,6 @@
 language: objective-c
 before_install:
-  - sudo easy_install cpp-coveralls
+  - gem install xcpretty
 script:
-#  - make test
-   - make build
-after_success:
-  - ./coveralls.sh - UUIDShortener -e UUIDShortenerTests --verbose
+  - rake
+   

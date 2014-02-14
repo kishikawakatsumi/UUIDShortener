@@ -44,3 +44,7 @@ NSLog(@"Restored UUID:\t%@", restoredString);
 
 ## License
 MIT License
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/kishikawakatsumi/uuidshortener/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+

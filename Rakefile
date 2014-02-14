@@ -18,6 +18,6 @@ end
 desc "Test"
 task :test do
   DESTINATIONS.each do |destination|
-    sh "xcodebuild test -scheme UUIDShortener -configuration Debug -sdk iphonesimulator -destination \"#{destination}\" | xcpretty -c; exit ${PIPESTATUS[0]}"
+    sh "xcodebuild test -scheme UUIDShortener -configuration Debug -sdk iphonesimulator -destination \"#{destination}\" | xcpretty -tc; exit ${PIPESTATUS[0]}"
   end
 end

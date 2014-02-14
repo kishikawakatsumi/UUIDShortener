@@ -7,17 +7,17 @@ task :default => [:clean, :build, :test]
 
 desc 'Clean'
 task :clean do
-  system("xcodebuild clean -scheme UUIDShortener | xcpretty -c")
+  sh "xcodebuild clean -scheme UUIDShortener | xcpretty -c; exit ${PIPESTATUS[0]}"
 end
 
 desc 'Build'
 task :build do
-  system("xcodebuild -scheme UUIDShortener CODE_SIGN_IDENTITY=\"\" CODE_SIGNING_REQUIRED=NO | xcpretty -c")
+  sh "xcodebuild build -scheme UUIDShortener CODE_SIGN_IDENTITY=\"\" CODE_SIGNING_REQUIRED=NO | xcpretty -c; exit ${PIPESTATUS[0]}"
 end
 
 desc "Test"
 task :test do
   DESTINATIONS.each do |destination|
-    system("xcodebuild test -scheme UUIDShortener -configuration Debug -sdk iphonesimulator -destination \"#{destination}\" | xcpretty -c")
+    sh "xcodebuild test -scheme UUIDShortener -configuration Debug -sdk iphonesimulator -destination \"#{destination}\" | xcpretty -c; exit ${PIPESTATUS[0]}"
   end
 end

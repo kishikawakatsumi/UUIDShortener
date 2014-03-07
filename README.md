@@ -51,7 +51,3 @@ NSLog(@"Restored UUID:\t%@", restoredString);
 [BSD]: http://opensource.org/licenses/bsd-license.php
 
 UUID Shortener is available under the [MIT license][MIT]. See the LICENSE file for more info.
-
-
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/kishikawakatsumi/uuidshortener/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
-
